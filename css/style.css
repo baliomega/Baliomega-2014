@@ -1,0 +1,241 @@
+/* 
+	-----------------------------
+	Baliomega.com stylesheets
+	-----------------------------	
+*/
+
+@charset "UTF-8";
+
+/* Google Font */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@font-face {
+  font-family:si;
+  src: url("../fonts/socicon.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/socicon.woff") format("woff"),
+  url("../fonts/socicon.ttf") format("truetype"),
+  url("../fonts/socicon.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {color: #7f8c8d; font-family:'Lato', sans-serif; font-size: 14px; line-height: 16px;}
+a {color: #1abc9c;}
+a:hover, a:focus {color: #23a68c;}
+header {padding: 90px 0;}
+footer {padding: 60px 0;}
+.intro {padding: 60px 0 30px 0;}
+.social {padding: 60px 0;}
+.artwork {padding: 60px 0;}
+
+
+/*------------- Header -------------*/
+header {background: #2c3e50 url("../img/bg-header.jpg") no-repeat top right; background-size: cover; text-align: center;}
+#nowPlayingBox {color: #fff; font-weight: 300; margin-top: 50px; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #4391bd; padding: 8px 40px; display: inline-block;}
+.icon {margin-right: 5px; vertical-align: baseline;}
+.track {margin-top: 5px;}
+
+/*------------- Intro -------------*/
+.intro {text-align: center;}
+.intro h3 {font-weight: 300;}
+
+/*------------ Timeline -----------*/
+.timeline {list-style: none; padding: 20px 0 20px; position: relative;}
+ul.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background-color: #cccccc;
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li {margin-bottom: 20px; position: relative;}
+.timeline > li:before, .timeline > li:after {content: " "; display: table;}
+.timeline > li:after {clear: both;}
+.timeline > li:before, .timeline > li:after {content: " "; display: table;}
+.timeline > li:after {clear: both;}
+.timeline > li > .timeline-panel {
+    width: 44%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #cccccc;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {float: right;}
+.timeline > li.timeline-inverted > .timeline-panel:before {border-left-width: 0; border-right-width: 15px; left: -15px; right: auto;}
+.timeline > li.timeline-inverted > .timeline-panel:after {border-left-width: 0; border-right-width: 14px; left: -14px; right: auto;}
+.timeline-title {margin-top: 0; color: inherit;}
+.timeline-body > p, .timeline-body > ul {margin-bottom: 0;}
+.timeline-body > p + p {margin-top: 5px;}
+
+/*------------ Artwork -----------*/
+.artwork {text-align: center; background: #ececec;}
+.artwork .each {margin-bottom: 30px;}
+.dribbble-feed {margin-top: 40px;}
+.each {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.each img:hover {opacity: 0.7;}
+
+/*------------- Social ------------*/
+.social {text-align: center;}
+.social h4, .artwork h4 {text-transform: uppercase; font-weight: 900; padding-bottom: 10px; border-bottom: 1px solid #ccc; display: inline-block;}
+.soc {margin: 30px 0 0 -40px;}
+.soc li {display: inline-block; *display: inline; zoom: 1;}
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 59px;
+    height: 59px;
+    line-height: 59px;
+    font-size: 32px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 15px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-icon-last{margin: 0 !important;}
+
+.soc-twitter {background-color: #ccc;}
+.soc-twitter:hover, .soc-twitter:focus {background-color: #4da7de;}
+.soc-twitter:before {content: 'a';}
+
+.soc-linkedin {background-color: #ccc;}
+.soc-linkedin:hover, .soc-linkedin:focus {background-color: #3371b7;}
+.soc-linkedin:before {content:'j';}
+
+.soc-lastfm {background-color: #ccc;}
+.soc-lastfm:hover, .soc-lastfm:focus {background-color: #d41316;}
+.soc-lastfm:before {content:'q';}
+
+.soc-dribbble {background-color: #ccc;}
+.soc-dribbble:hover, .soc-dribbble:focus {background-color: #e84d88;}
+.soc-dribbble:before {content:'D';}
+
+.soc-instagram {background-color: #ccc;}
+.soc-instagram:hover, .soc-instagram:focus {background-color: #9c7c6e;}
+.soc-instagram:before {content:'x';}
+
+/*------------- Footer ------------*/
+footer {background: #1abc9c; color: #fff; text-align: center;}
+
+
+/* 
+	--------------------------------
+	Media Queries 
+	--------------------------------
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url("../fonts/socicon.svg") format(svg);
+    }
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {left: 40px;}
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {float: right;}
+
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {text-align: left;}
+    .intro h3, h3.timeline-title {font-size: 20px;}
+    .timeline-heading h4 {font-size: 18px;}
+    #nowPlayingBox {display: none;}
+    header {padding: 45px 0;}
+    footer {padding: 30px 0;}
+    .intro {padding: 15px 0 0 0;}
+    .social {padding: 30px 0;}
+    .artwork {padding: 30px 0;}
+}
